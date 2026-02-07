@@ -5,9 +5,6 @@ import authRouter from "./routes/auth.routes.js";
 import { errorHandler } from "./middleware/error.middleware.js";
 import cookieParser from "cookie-parser";
 import categoryRouter from "./routes/category.routes.js";
-import productRouter from "./routes/product.routes.js";
-import userRouter from "./routes/user.routes.js";
-import saveProductRouter from "./routes/save-product.routes.js";
 import path from "path";
 import orderProductRouter from "./routes/order-product.routes.js";
 // import sequelize from "./config/config.js";
@@ -34,9 +31,6 @@ app.use(
 
 app.use(authRouter);
 app.use(categoryRouter);
-app.use(productRouter);
-app.use(userRouter);
-app.use(saveProductRouter);
 app.use(orderProductRouter);
 app.use(errorHandler);
 
